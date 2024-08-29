@@ -1,0 +1,120 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: Inter;
+}
+
+body {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   height: 100vh;
+   padding: 150px 0;
+}
+
+.textWeather {
+   color: #665c52;
+}
+
+.container-main {
+   /* background-color: #e7e7e7; */
+   background-image: linear-gradient(to left, #d6ddea, #dcf7f3);
+   border-radius: 10px;
+   padding: 15px;
+   /* width: 350px; */
+   box-shadow: 0 5px 2px -2px #e6e1cf;
+}
+
+.search{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   gap: 10px;
+}
+
+#searchIcon {
+   border-radius: 20px;
+   background-color: #ffffff4f;
+   padding: 5px;
+   cursor: pointer;
+   width: 40px;
+   height: 40px;
+   fill: #3b3f49;
+   transition: .1s;
+}
+
+#searchIcon:hover{
+   fill: #cc5b14;
+   padding: 8px;
+}
+
+#searchText {
+   border-radius: 10px;
+   border: none;
+   padding: 12px;
+   outline: none;
+   font-size: 18px;
+}
+
+#searchText::placeholder {
+   font-size: 18px;
+}
+
+.error {
+   color: #413c3c;
+   font-weight: bold;
+   font-size: 14px;
+   letter-spacing: .5px;
+}
+
+.information {
+   margin-top: 10px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   color: #3b3f49;
+   display: none;
+}
+
+.loading {
+   display: flex;
+   justify-content: center;
+   margin-top: 10px;
+}
+
+.loading-icon {
+   display: none;
+   width: 60px;
+   height: 60px;
+   fill: #3b3f4977;
+}
+
+.city {
+   padding-bottom: 7px;
+   text-align: center;
+}
+
+.information-weather {
+   display: flex;
+   align-items: center;
+   justify-content: space-around;
+   font-weight: bold;
+}
+
+.weather {
+   text-transform: capitalize;
+}
+
+.humidity {
+   margin-top: 10px;
+   text-align: center;
+   font-size: 18px;
+}
+
+.error {
+   padding-top: 20px;
+   text-align: center;
+   display: none;
+}

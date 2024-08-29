@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+
+   <!-- BOX ICONS -->
+   <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+
+   <!-- FONT -->
+   <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+   </style>
+
+   <!-- BACKEND -->
+   <script src="../back-end/server.js" defer></script>
+
+   <title>Previsão do Tempo</title>
+</head>
+
+<body>
+   <header>
+      <h1 class="textWeather">Previsão do Tempo</h1>
+   </header>
+
+   <main>
+      <div class="container-main">
+         <section class="search">
+            <input type="text" name="" id="searchText" placeholder="Digite uma cidade" maxlength="58" autofocus>
+            <box-icon id="searchIcon" name='search'></box-icon>
+         </section>
+
+         <section class="loading">
+            <box-icon name='loader' animation='flashing' class="loading-icon"></box-icon>
+         </section>
+
+         <section class="information">
+            <h2 class="city"></h2>
+
+            <div class="information-weather">
+               <div class="temperature"></div>
+               <p class="weather"></p>
+               <img class="icon-weather" alt="">
+            </div>
+            <div>
+               <p class="humidity"></p>
+            </div>
+         </section>
+
+         <section class="error">
+            Por favor, digite uma cidade.
+         </section>
+      </div>
+   </main>
+</body>
+
+</html>
