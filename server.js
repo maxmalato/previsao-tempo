@@ -70,5 +70,3 @@ document.addEventListener('keypress', function (e) {
       searchIcon.click()
    }
 })
-
-// INPUT NO INFORMATION
